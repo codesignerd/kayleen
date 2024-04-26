@@ -1,0 +1,461 @@
+.main {
+    padding: 16px 0;
+}
+
+/* ========== Post Card Section =========== */
+.main .post-cards {
+    padding: 0px 16px 16px;
+}
+
+.main .post-cards .container {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: flex-start;
+    gap: 16px;
+}
+
+.main .post-cards .post-card {
+    /* min-width: 268px; */
+    min-width: 20%;
+    height: 400px;
+    flex-grow: 1;
+    position: relative;
+    background: #e6e6e6;
+    padding: 24px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.main .post-cards .post-card .post-content {
+    max-width: 80%;
+    margin-inline: auto;
+    position: absolute;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    gap: 4px;
+    color: #fffefe;
+}
+
+.main .post-cards .post-card .post-title {
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.main .post-cards .post-card .post-author {
+    font-size: 15px;
+    font-weight: 450;
+}
+
+#post-card1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0)), url("./assets/images/post-card1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#post-card2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0)), url("./assets/images/post-card2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#post-card3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0)), url("./assets/images/post-card3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#post-card4 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0)), url("./assets/images/post-card4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* ========== ADS Banner Styling ========== */
+.ads-banner {
+    background-color: #ffffff;
+    padding: 40px 2.5% 32px;
+}
+
+.ads-banner .container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url("./assets/images/image-banner1.webp");
+    position: relative;
+    border-radius: 8px;
+    height: 200px;
+    padding: 24px;
+    background-size: cover;
+    background-position: 65%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.ads-banner .banner-text {
+    position: absolute;
+    color: #ffffff;
+    bottom: 24px;
+    right: 24px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== Post Archive Styling =========== */
+
+.post-archive {
+    padding: 32px 2%;
+    /* border: 1px solid black; */
+}
+
+.post-archive .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.post-archive .container .archive-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 68%;
+    flex-grow: 1;
+    gap: 8px;
+
+}
+
+.archive-list .archive-post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.archive-post .image {
+    width: min(200px, 268px);
+    height: min(200px, 268px);
+}
+
+.archive-post .image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.archive-post .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 20px 8px 0px;
+    flex-grow: 1;
+    min-width: 50%;
+    height: 80%;
+}
+
+.archive-post .content h6 {
+    font-size: min(16px, 20px);
+    line-height: 1.4;
+    width: 85%;
+    margin-bottom: 4px;
+}
+
+.archive-post .content p {
+    font-size: min(14px, 16px);
+    font-weight: 400;
+    color: rgba(153, 153, 153, 0.9);
+}
+
+.archive-post .content button {
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.post-archive .container .sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 22%;
+    flex-grow: 2;
+    gap: 32px;
+
+}
+
+.sidebar h6 {
+    font-size: min(16px, 18px);
+}
+
+.sidebar .s-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sidebar .tag-cloud .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar .tag-cloud .content .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #f5f4f4;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sidebar .advertising .content .banner {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)), url("./assets/images/rivax-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    border-radius: 12px;
+    width: 100%;
+    min-height: 180px;
+    max-height: 200px;
+    padding: 16px;
+    text-align: center;
+}
+
+.sidebar .advertising .content .banner p {
+    position: absolute;
+    color: #fffefe;
+    font-weight: 500;
+    top: 45%;
+    left: 20%;
+    right: 20%;
+}
+
+.sidebar .featured-post .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.sidebar .featured-post .content .posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* box-shadow: 0px 2px 15px 0px rgba(207, 207, 207, 0.2); */
+}
+
+.sidebar .featured-post .content .posts .image {
+    width: min(80px, 130px);
+    height: min(80px, 130px);
+    flex-grow: 2;
+}
+
+.sidebar .featured-post .content .posts .image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
+
+.sidebar .featured-post .content .posts .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: min(4px, 8px);
+    padding: 0px 4px 0px;
+    flex-grow: 1;
+    width: 70%;
+    height: 80%;
+}
+
+.sidebar .featured-post .content .posts .content h6 {
+    line-height: 1.4;
+    width: 95%;
+    font-size: min(12px, 14px);
+}
+
+.sidebar .featured-post .content .posts .content p {
+    line-height: 1.2;
+    font-size: min(12px, 14px);
+    font-weight: 400;
+    color: rgba(153, 153, 153, 0.9);
+}
+
+.newsletter {
+    padding: 24px 0px 16px;
+}
+
+.newsletter .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    background-color: #f1f0f0;
+    border-radius: 8px;
+    padding: 24px 32px;
+    min-height: 150px;
+
+}
+
+.newsletter .container .text {
+    min-width: 35%;
+    flex-grow: 1;
+}
+
+.newsletter .container .text h6 {
+    width: 100%;
+    font-weight: 550;
+    font-size: 24px;
+    color: #302f2f;
+}
+
+.newsletter .container .form {
+    min-width: 35%;
+    flex-grow: 1;
+}
+
+.newsletter .container .form #newsletter1 {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    width: 70%;
+}
+
+.newsletter .container .form button {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 1rem;
+    max-width: 28%;
+    background-color: #d32727;
+    color: #fffefe;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ========== Utility Class */
+.bg-blue {
+    background-color: #315dee;
+}
+
+.bg-grey {
+    background-color: #5a5a5a;
+}
+
+.bg-teal {
+    background-color: #24d48b;
+}
+
+.bg-orange {
+    background-color: #ff7321;
+}
+
+/* ========== Media Queries ========== */
+@media only screen and (min-width: 429px) and (max-width: 1024px) {
+    .main .post-cards .post-card {
+        width: 35%;
+        max-width: 504px;
+    } 
+}
+
+@media only screen and (min-width: 429px) and (max-width: 620px) {
+    .main .post-cards .post-card {
+        height: 320px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 428px) {
+    .main .post-cards .post-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 850px) {
+    .post-archive .container .archive-list {
+        width: 100%;
+    }
+
+    .post-archive .container .sidebar {
+        display: none;
+    }
+} 
+
+@media only screen and (min-width: 100px) and (max-width: 598px) {
+    .archive-post .image {
+        width: 200px;
+        height: 150px;
+    }
+
+    .archive-post .content h6 {
+        font-size: 14px;
+        width: 85%;
+    }
+    
+    .archive-post .content p {
+        font-size: 11px;
+        line-height: 1.5;
+        font-weight: 300;
+}
+
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1080px) {
+    .newsletter .container {
+        flex-direction: column;
+        gap: 24px;
+        padding: 16px;
+        text-align: center;
+    }
+    
+    /* .newsletter .container .form form {
+        min-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    } */
+
+    .newsletter .container .form button {
+        font-size: min(11px, 13px);
+    }
+
+    .newsletter .container .text h6 {
+        font-size: min(18px, 20px);
+    }
+}
