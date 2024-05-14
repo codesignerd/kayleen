@@ -60,15 +60,14 @@ img {
 }
 
 .header .first-nav .hamburger-menu {
-    border: 1px solid #da1c8b ;
+    /* border: 1px solid #da1c8b ; */
     border-radius: 4px;
     color: #da1c8b;
     width: min(40px, 56px);
     height: min(40px, 56px);
-    padding: 4px;
     text-align: center;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 32px;
     cursor: pointer;
 }
 
@@ -80,6 +79,7 @@ img {
 
 .header .first-nav .search-bar {
     background-color: #da1c8b;
+    color: #ffffff;
     border-radius: 100%;
     width: min(40px, 56px);
     height: min(40px, 56px);
