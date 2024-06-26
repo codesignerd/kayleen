@@ -3,23 +3,26 @@ const closeBtn = document.querySelector(".close-btn");
 const firtsNav = document.querySelector(".first-nav");
 const secondNav = document.querySelector(".second-nav");
 const minWidth = 768;
+let screenWidth;
 
-document.addEventListener("resize", () => {
 
-const screenWidth = window.innerWidth;
+window.addEventListener("resize", () => {
+screenWidth = window.innerWidth;
 
 if (minWidth >= screenWidth) {
-    
+    secondNav.classList.remove("show-nav");
 }
-
 });
 
+// this function open menu on mobile
 mobileMenu.addEventListener("click", () => {
-    secondNav.style.transitionDuration = "600ms";
-    secondNav.style.left = 0;
-});
+    screenWidth = window.innerWidth;
 
+ if (minWidth >= screenWidth) {
+    secondNav.classList.add("show-nav");
+}});
+
+// this function close menu on mobile
 closeBtn.addEventListener("click", () => {
-    secondNav.style.transitionDuration = "600ms";
-    secondNav.style.left = "-10000px";
+    secondNav.classList.remove("show-nav");
 });

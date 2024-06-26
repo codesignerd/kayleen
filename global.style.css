@@ -107,7 +107,6 @@ img {
 }
 
 .header .second-nav .nav-menu .close-btn {
-    display: block;
     border-radius: 4px;
     width: min(40px, 48px);
     height: min(40px, 48px);
@@ -242,11 +241,6 @@ img {
 }
 
 /* ========== Utilities Class styling ========== */
-.container {
-    margin-inline: auto;
-    max-width: 1120px;
-}
-
 .logo {
     display: flex;
     justify-content: center;
@@ -276,6 +270,9 @@ img {
 }
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {
+    .container {
+        padding: 0px 16px;
+    }
     #header {
         padding: 16px 0;
     }
@@ -291,14 +288,21 @@ img {
     }
 
     #header .second-nav {
+        visibility: hidden;
         background: linear-gradient(90deg, rgba(32, 32, 32, 0.6),
         rgba(32, 32, 32, 0.6));
         position: absolute;
-        left: 0;
+        left: -10000px;
         top: 0;
         width: 100%;
         height: 1000%;
         z-index: 1;
+        transition: left 500ms ease-in-out;
+    }
+
+    #header .second-nav.show-nav {
+        visibility: visible;
+        left: 0;
     }
 
     #header .second-nav .nav-menu {
